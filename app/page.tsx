@@ -1,30 +1,6 @@
 import Image from "next/image";
-
-function PillarCard({
-  title,
-  description,
-  imageUrl,
-}: {
-  title: string;
-  description: string;
-  imageUrl: string;
-}) {
-  return (
-    <div
-      className="bg-linear-to-b from-white to-indigo-50
-     h-80 relative border p-4 m-4 rounded-lg border-sky-200/50 shadow-lg w-2xs overflow-hidden"
-    >
-      <div
-        className="absolute bottom-0 right-0 w-32 h-32 opacity-50 bg-no-repeat bg-contain bg-bottom bg-right pointer-events-none"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      />
-      <div className="relative z-10">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="mt-2">{description}</p>
-      </div>
-    </div>
-  );
-}
+import { PillarCard } from "./components/PillarCard";
+import { SkillsChart } from "./components/SkillsChart";
 
 export default function Home() {
   const pillars = [
@@ -47,8 +23,9 @@ export default function Home() {
       imageUrl: "/security.svg",
     },
   ];
+
   return (
-    <div className="p-8 bg-gradient-to-b from-indigo-200 via-purple-200 to-pink-200">
+    <div className="p-8 bg-gradient-to-b from-sky-200 via-yellow-200 to-red-200">
       <div className="flex items-center justify-between mb-12">
         <div>
           <h1 className="text-4xl font-bold">Maxime Pie</h1>
@@ -67,9 +44,11 @@ export default function Home() {
         />
       </div>
 
-      <h2 className="text-3xl">Pilliers de développement</h2>
+      <h2 className="text-3xl font-semibold text-center">
+        Pilliers de développement
+      </h2>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center mt-8">
         {pillars.map((pillar) => (
           <PillarCard
             key={pillar.title}
@@ -79,6 +58,8 @@ export default function Home() {
           />
         ))}
       </div>
+
+      <SkillsChart />
     </div>
   );
 }
