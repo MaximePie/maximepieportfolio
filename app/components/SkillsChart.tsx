@@ -150,7 +150,7 @@ export function SkillsChart() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="p-8 bg-white rounded-lg shadow-lg mt-12"
+      className="p-8 bg-white rounded-lg shadow-lg"
     >
       <h2 className="text-3xl font-semibold text-center mb-6">Compétences</h2>
       <p className="text-center mb-4">
