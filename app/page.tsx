@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Experiences } from "./components/Experiences";
 import { Networks } from "./components/Networks";
 import { Pillars } from "./components/Pillars";
 import { SkillsChart } from "./components/SkillsChart";
@@ -93,7 +94,7 @@ export function Chip({
   return (
     <span
       className={
-        "inline-flex items-center px-3 py-1 rounded-full text-sm font-medium " +
+        "inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mr-1 " +
         colorClasses[color]
       }
     >
@@ -107,6 +108,7 @@ export default function Home() {
     <div className="bg-gradient-to-b from-sky-200 via-yellow-200 to-red-200">
       <Hero />
       <Pillars />
+      <Experiences />
       <SkillsChart />
       <Networks />
     </div>
