@@ -73,7 +73,7 @@ export function Experiences() {
                         gestion efficace des données et des formulaires. <br />-
                         React Router, Context API, Helmet.js
                         <br />- Déploiement sur Render et Netlify avec CI/CD
-                        (Husky, Renovate). (+350 tests Vitests et Jest)
+                        (Husky, Renovate). (+550 tests Vitests et Jest)
                       </p>
                     </div>
                     <Chip text="React" color="blue" />
