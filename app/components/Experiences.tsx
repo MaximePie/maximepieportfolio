@@ -76,10 +76,12 @@ export function Experiences() {
                         (Husky, Renovate). (+550 tests Vitests et Jest)
                       </p>
                     </div>
-                    <Chip text="React" color="blue" />
-                    <Chip text="Node.js" color="green" />
-                    <Chip text="TypeScript" color="yellow" />
-                    <Chip text="MongoDB" color="purple" />
+                    <div className="mt-4">
+                      <Chip text="React" color="blue" />
+                      <Chip text="Node.js" color="green" />
+                      <Chip text="TypeScript" color="yellow" />
+                      <Chip text="MongoDB" color="purple" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,10 +153,12 @@ export function Experiences() {
                         personnes,
                       </p>
                     </div>
-                    <Chip text="React" color="blue" />
-                    <Chip text="AWS" color="green" />
-                    <Chip text="TypeScript" color="yellow" />
-                    <Chip text="DynamoDB" color="purple" />
+                    <div className="mt-4">
+                      <Chip text="React" color="blue" />
+                      <Chip text="AWS" color="green" />
+                      <Chip text="TypeScript" color="yellow" />
+                      <Chip text="DynamoDB" color="purple" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -294,11 +298,13 @@ export function Experiences() {
                         <br />- React Typescript en front, Laravel PHP en back
                       </p>
                     </div>
-                    <Chip text="React" color="blue" />
-                    <Chip text="GraphQL" color="green" />
-                    <Chip text="TypeScript" color="yellow" />
-                    <Chip text="Laravel" color="purple" />
-                    <Chip text="PHPUnit" color="red" />
+                    <div className="mt-4">
+                      <Chip text="React" color="blue" />
+                      <Chip text="GraphQL" color="green" />
+                      <Chip text="TypeScript" color="yellow" />
+                      <Chip text="Laravel" color="purple" />
+                      <Chip text="PHPUnit" color="red" />
+                    </div>
                   </div>
                 </div>
               </div>

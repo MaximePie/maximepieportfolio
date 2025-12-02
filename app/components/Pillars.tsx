@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Chip } from "../page";
+import { PillarsChip } from "./PillarsChip";
 
 export function Pillars() {
   return (
@@ -37,11 +37,13 @@ export function Pillars() {
                     de code pour garantir que chaque fonctionnalité fonctionne
                     comme prévu et reste fiable au fil du temps.
                   </p>
-                  <div className="mt-6 pt-4 border-t border-gray-200 flex gap-2 flex-wrap">
-                    <Chip text="Typescript" color="blue" />
-                    <Chip text="Playwright" color="purple" />
-                    <Chip text="Jest" color="yellow" />
-                  </div>
+                  <PillarsChip
+                    chips={[
+                      { text: "Typescript", color: "blue" },
+                      { text: "Playwright", color: "purple" },
+                      { text: "Jest", color: "yellow" },
+                    ]}
+                  />
                 </div>
               </div>
             </div>
@@ -62,11 +64,13 @@ export function Pillars() {
                   des performances maximales et une expérience utilisateur
                   fluide.
                 </p>
-                <div className="mt-6 pt-4 border-t border-gray-200 flex gap-2  flex-wrap">
-                  <Chip text="TanstackQuery" color="blue" />
-                  <Chip text="Lighthouse" color="green" />
-                  <Chip text="Next.Js" color="yellow" />
-                </div>
+                <PillarsChip
+                  chips={[
+                    { text: "TanstackQuery", color: "blue" },
+                    { text: "Lighthouse", color: "green" },
+                    { text: "Next.Js", color: "yellow" },
+                  ]}
+                />
               </div>
             </div>
             <div className="relative">
@@ -90,15 +94,17 @@ export function Pillars() {
                     intégrant les meilleures pratiques pour protéger les données
                     des utilisateurs.
                   </p>
-                  <div className="mt-6 pt-4 border-t border-gray-200 flex gap-2 flex-wrap">
-                    <Chip text="JWT/Oauth 2.0" color="blue" />
-                    <Chip text="Helmet.js" color="green" />
-                    <Chip text="Zod" color="yellow" />
-                    <Chip text="bcrypt" color="yellow" />
-                    <Chip text="Snyk" color="purple" />
-                    <Chip text="Renovate" color="purple" />
-                    <Chip text="HTTPS" color="yellow" />
-                  </div>
+                  <PillarsChip
+                    chips={[
+                      { text: "JWT/Oauth 2.0", color: "blue" },
+                      { text: "Helmet.js", color: "green" },
+                      { text: "Zod", color: "yellow" },
+                      { text: "bcrypt", color: "yellow" },
+                      { text: "Snyk", color: "purple" },
+                      { text: "Renovate", color: "purple" },
+                      { text: "HTTPS", color: "yellow" },
+                    ]}
+                  />
                 </div>
               </div>
             </div>
@@ -123,6 +129,14 @@ export function Pillars() {
                     efficacement les délais et de livrer des projets de haute
                     qualité dans les temps impartis.
                   </p>
+                  <PillarsChip
+                    chips={[
+                      {
+                        text: "50+ katas sur CodeWars et Coding Game",
+                        color: "green",
+                      },
+                    ]}
+                  />
                 </div>
               </div>
             </div>
